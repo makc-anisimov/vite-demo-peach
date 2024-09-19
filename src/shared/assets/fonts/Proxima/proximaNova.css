@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 400;
+    src: url('ProximaNovaCond-Regular.eot');
+    src: local('Proxima Nova Condensed Regular'), local('ProximaNovaCond-Regular'),
+        url('ProximaNovaCond-Regular.eot?#iefix') format('embedded-opentype'),
+        url('ProximaNovaCond-Regular.woff2') format('woff2'),
+        url('ProximaNovaCond-Regular.woff') format('woff'),
+        url('ProximaNovaCond-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    font-weight: 600;
+    font-style: normal;
+    src: url('ProximaNovaCond-Semibold.eot');
+    src: local('Proxima Nova Condensed Semibold'), local('ProximaNovaCond-Semibold'),
+        url('ProximaNovaCond-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('ProximaNovaCond-Semibold.woff2') format('woff2'),
+        url('ProximaNovaCond-Semibold.woff') format('woff'),
+        url('ProximaNovaCond-Semibold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Proxima Nova Bl';
+    src: url('ProximaNova-Black.eot');
+    src: local('Proxima Nova Black'), local('ProximaNova-Black'),
+        url('ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
+        url('ProximaNova-Black.woff2') format('woff2'),
+        url('ProximaNova-Black.woff') format('woff'),
+        url('ProximaNova-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('ProximaNova-Bold.eot');
+    src: local('Proxima Nova Bold'), local('ProximaNova-Bold'),
+        url('ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('ProximaNova-Bold.woff2') format('woff2'),
+        url('ProximaNova-Bold.woff') format('woff'),
+        url('ProximaNova-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('ProximaNova-Extrabld.eot');
+    src: local('Proxima Nova Extrabold'), local('ProximaNova-Extrabld'),
+        url('ProximaNova-Extrabld.eot?#iefix') format('embedded-opentype'),
+        url('ProximaNova-Extrabld.woff2') format('woff2'),
+        url('ProximaNova-Extrabld.woff') format('woff'),
+        url('ProximaNova-Extrabld.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}

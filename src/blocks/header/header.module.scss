@@ -1,0 +1,32 @@
+.header {
+  padding: 0 70px;
+  min-height: 85px;
+  box-sizing: border-box;
+  border: 1px solid rgb(217, 217, 217);
+  background: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  &__menu {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  &__menuItem {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+  }
+  &__link {
+    color: rgb(68, 68, 68);
+    font-family: "Proxima Nova";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0%;
+  }
+}
