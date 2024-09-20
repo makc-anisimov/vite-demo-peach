@@ -1,0 +1,81 @@
+.about {
+  margin: 0 auto;
+  // margin-top: -2px;
+  padding: 100px 70px;
+  &__info {
+    margin: 0;
+    // margin-top: 2px;
+    width: calc(100% - 220px);
+    padding: 100px 110px;
+    box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.08);
+    color: rgb(68, 68, 68);
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  &__name {
+    color: rgb(163, 12, 51);
+  }
+
+  &__numbers {
+    margin: 100px auto;
+    padding: 0 110px;
+    width: 100%;
+    // width: calc(100% - 221px);
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    // align-items: center;
+    column-gap: 185px;
+    row-gap: 78px;
+    max-width: 889px;
+  }
+  &__number {
+    flex-direction: column;
+    gap: 4px;
+    margin: 0;
+    max-width: 240px;
+  }
+
+  &__numberTitle {
+    margin: 0;
+    color: rgb(163, 12, 51);
+    font-size: 80px;
+    font-weight: 600;
+    line-height: 80%;
+    letter-spacing: 0%;
+  }
+  &__numberText {
+    color: rgb(68, 68, 68);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    display: inline-block;
+  }
+
+  &__numbersSymb {
+    color: #a30c33;
+    font-family: "Proxima Nova Bl";
+    font-size: 64px;
+    height: 64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 100%; /* 64px */
+    margin-right: 10px;
+
+    &Pl {
+      color: #a30c33;
+      font-size: 64px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 100%; /* 64px */
+      margin-left: 10px;
+      margin-right: -25px;
+    }
+  }
+}

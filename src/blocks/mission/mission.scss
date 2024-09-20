@@ -1,0 +1,31 @@
+.mission {
+  padding: 139px 72px 140px 68px;
+  margin: 100px auto;
+  background-color: #a30c33;
+  width: calc(100% - 140px);
+  // min-height: 471px;
+  background-image: url("../../shared/assets/images/lpattern.svg"),
+    url("../../shared/assets/images/rpattern.svg");
+  background-position: left center, right center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, auto;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  // background-size: auto 100%, auto 100%;
+  &__title {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+  }
+  &__text {
+    margin: 0;
+    color: #fff;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 48px */
+  }
+}
