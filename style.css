@@ -9,6 +9,7 @@
 @import url(./src/blocks/mission/mission.scss);
 @import url(./src/blocks/buisness/buisness.scss);
 @import url(./src/blocks/motivation/motivation.scss);
+@import url(./src/blocks/photolife/photolife.scss);
 
 body {
   margin: 0, auto;
