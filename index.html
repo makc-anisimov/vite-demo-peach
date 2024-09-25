@@ -6,13 +6,13 @@
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="author" content="Max Anisimov">
-  <meta name="description" content="Пример выполнения тестового задания">
+  <meta name="description" content="Пример выполнения тестового задания  для студии Peach">
   <title>Demo Peach</title>
 </head>
 
 <body class="app">
   <header class="header">
-    <img src="./src/shared/assets/images/logo.svg" class="header__logo" alt="Logo image Softline" />
+    <img class="header__logo" src="./src/shared/assets/images/logo.svg" alt="Logo image Softline" />
     <nav>
       <ul class='header__menu'>
         <li class="header__menuItem">
@@ -32,7 +32,7 @@
   </header>
   <section class="promo">
     <div class="promo__contentWrapper">
-      <h2 class="promo__title title">
+      <h2 class="title promo__title">
         Поставщик услуг цифровой трансформации и&nbsp;кибербезопасности
       </h2>
       <a href=" https://softline.ru" class="promo__link">
@@ -51,7 +51,7 @@
     <ul class="about__numbers">
       <li class="about__number">
         <p class="about__numberTitle">
-          <span class="about__numbersSymb">&gt;</span>30&nbsp;лет
+          <span class="about__numberSymb">&gt;</span>30&nbsp;лет
         </p>
         <span class="about__numberText">на&nbsp;IT-рынке</span>
       </li>
@@ -64,14 +64,11 @@
         <span class="about__numberText">городов России</span>
       </li>
       <li class="about__number">
-        <p class="about__numberTitle">
-          2000<span class="about__numbersSymbPl">+</span>
-        </p>
+        <p class="about__numberTitle">2000<span class="about__numberSymbPl">+</span></p>
         <span class="about__numberText">разработчиков</span>
       </li>
       <li class="about__number">
-        <p class="about__numberTitle">
-          3000<span class="about__numbersSymbPl">+</span>
+        <p class="about__numberTitle">3000<span class="about__numberSymbPl">+</span>
         </p>
         <span class="about__numberText">
           сотрудников ежегодно проходят&nbsp;оценку и&nbsp;обучение
@@ -79,6 +76,62 @@
       </li>
     </ul>
   </section>
+  <section class="officies">
+    <nav class="officies__navigation">
+      <div class="officies__officiesMenu">
+        <button class="officies__officiesButton">
+          <span class="officies__officiesButtonText">
+            Офисы Softline
+          </span>
+          <img src={DownAroow} alt="раскрыть меню" />
+        </button>
+        <!-- <ul class="officies__menuAll">
+          {links.map((link, index) => (
+            <li class="officies__menuItem} key={index}>
+              <ul class="officies__menuCities}>
+                {link.map((city, index) => (
+                  <li class="officies__menuCitiesItem} key={index}>
+                    {city}
+                  </li>
+                ))}
+              </ul>
+            </li>
+          ))}
+        </ul> -->
+      </div>
+      <ul class="officies__menu">
+        <li class="officies__menuItem">
+          <button type="button" class="officies__button">
+            Все
+          </button>
+        </li>
+        <!-- {links.map((link, index) => (
+          <li class="officies__menuItem} key={index}>
+            <button type="button" class="officies__button}>
+              {link[0]}
+            </button>
+          </li>
+        ))} -->
+      </ul>
+    </nav>
+    <div class="officies__mapBackground">
+      <img class="officies__mapCities officies__mapAllcities" src="./src/shared/assets/images/allCities.svg" alt="Все города на карте" /> 
+      <img class="officies__mapCities officies__mapMoscow" src="./src/shared/assets/images/CitiesMoscow.svg" alt="Города региона Москва на карте " /> 
+      <img class="officies__mapCities officies__mapCenter officies__mapCenter-YV" src="./src/shared/assets/images/CitiesCenterYarVoronezh.svg" alt="Города региона Центр на карте" />
+      <img class="officies__mapCities officies__mapCenter officies__mapCenter-Belgorod" src="./src/shared/assets/images/CitiesCenterBelgorod.svg" alt="Города региона Центр на карте" />
+      <img class="officies__mapCities officies__mapSeverozapad" src="./src/shared/assets/images/CitiesSeverozapad.svg" alt="Города региона СевероЗапад на карте" /> 
+      <img class="officies__mapCities officies__mapUg" src="./src/shared/assets/images/CitiesUG.svg" alt="Города региона Юг на карте" />
+      <img class="officies__mapCities officies__mapVolga" src="./src/shared/assets/images/CitiesVolga.svg" alt="Города региона Волга на карте" />
+      <img class="officies__mapCities officies__mapAllcities" src="./src/shared/assets/images/CitiesUral.svg" alt="Города региона Урал на карте" />
+      <img class="officies__mapCities officies__mapSyberia" src="./src/shared/assets/images/CitiesSyberia.svg" alt="Города региона Сибирь на карте" />
+      <img class="officies__mapCities officies__mapDv" src="./src/shared/assets/images/CitiesDV.svg" alt="Город Хабаровск на карте" />
+    </div>
+  </section>
+
+
+
+
+
   <section class="mission">
     <h3 class="mission__title title">Миссия Softline</h3>
     <p class="mission__text">Мы&nbsp;помогаем организациям трансформироваться, работать эффективно и&nbsp;безопасно
@@ -189,34 +242,35 @@
       </ul>
     </article>
   </section>
-<section class="photolife">
-  <div class="photolife__head">
-    <h4 class="title photolife__title">Корпоративная жизнь</h4>
-    <div class="photolife__buttons">
-      <button class="photolife__button photolife__button_left"><img src="./src/shared/assets/icons/lbutton.svg" alt="Prev Image button"></button>
-      <button class="photolife__button photolife__button_right"><img src="./src/shared/assets/icons/rbutton.svg" alt="Next Image button"></button>
+  <section class="photolife">
+    <div class="photolife__head">
+      <h4 class="title photolife__title">Корпоративная жизнь</h4>
+      <div class="photolife__buttons">
+        <button class="photolife__button photolife__button_left"><img src="./src/shared/assets/icons/lbutton.svg"
+            alt="Prev Image button"></button>
+        <button class="photolife__button photolife__button_right"><img src="./src/shared/assets/icons/rbutton.svg"
+            alt="Next Image button"></button>
+      </div>
     </div>
-  </div>
-  <div class="photolife__slider">
-    <div class="photolife__slide">
-      <img src="./src/shared/assets/images/slide1.png" alt="Peoples photo ">
+    <div class="photolife__slider">
+      <div class="photolife__slide">
+        <img src="./src/shared/assets/images/slide1.png" alt="Peoples photo ">
+      </div>
+      <div class="photolife__slide">
+        <img src="./src/shared/assets/images/slide2.png" alt="photo collage employees">
+      </div>
+      <div class="photolife__slide">
+        <img src="./src/shared/assets/images/slide3.png" alt="photo collage training">
+      </div>
+      <div class="photolife__slide">
+        <img src="./src/shared/assets/images/slide4.png" alt="photo collage sport activit">
+      </div>
+      <div class="photolife__slide">
+        <img src="./src/shared/assets/images/slide5.png" alt="photo collage picnic party">
+      </div>
+      <div class="photolife__progress"></div>
     </div>
-    <div class="photolife__slide">
-      <img src="./src/shared/assets/images/slide2.png" alt="photo collage employees">
-    </div>
-    <div class="photolife__slide">
-      <img src="./src/shared/assets/images/slide3.png" alt="photo collage training">
-    </div>
-    <div class="photolife__slide">
-      <img src="./src/shared/assets/images/slide4.png" alt="photo collage sport activit">
-    </div>
-    <div class="photolife__slide">
-      <img src="./src/shared/assets/images/slide5.png" alt="photo collage picnic party">
-    </div>
-    <div class="photolife__progress"></div>
-  </div>
-  
-</section>
+  </section>
   <script type="module" src="/main.js"></script>
 </body>
 

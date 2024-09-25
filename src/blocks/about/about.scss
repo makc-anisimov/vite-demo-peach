@@ -58,7 +58,7 @@
     display: inline-block;
   }
 
-  &__numbersSymb {
+  &__numberSymb {
     color: #a30c33;
     font-family: "Proxima Nova Bl";
     font-size: 64px;
@@ -76,6 +76,54 @@
       line-height: 100%; /* 64px */
       margin-left: 10px;
       margin-right: -25px;
+    }
+  }
+}
+@media screen and (max-width: 320px) {
+  .about {
+    padding: 60px 0 50px;
+
+    &__info {
+      width: calc(100% - 10px);
+      font-size: 16px;
+      line-height: 19.2px;
+      padding: 24px 5px;
+    }
+    &__numbers {
+      // width: calc(100% - 26px);
+      width: 100%;
+      margin-top: 50px;
+      margin-bottom: 0;
+      padding: 0;
+      column-gap: 8px;
+      row-gap: 24px;
+      justify-content: space-evenly;
+    }
+    &__number {
+      flex-direction: column;
+      gap: 4px;
+      margin: 0;
+      max-width: 180px;
+    }
+    &__numberTitle {
+      font-size: 40px;
+      line-height: 32px;
+      text-align: center;
+    }
+    &__numberText {
+      font-size: 16px;
+      text-align: center;
+    }
+    &__numberSymb {
+      font-size: 30px;
+      text-align: left;
+      margin-right: 4px;
+
+      &Pl {
+        font-size: 30px;
+        margin-left: 4px;
+        // margin-right: -25px;
+      }
     }
   }
 }

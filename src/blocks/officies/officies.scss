@@ -1,0 +1,97 @@
+.officies {
+  &__mapBackground {
+    z-index: -1;
+    margin: 0 auto;
+    position: relative;
+    width: 1190px;
+    height: 604px;
+    background-color: #ffffff;
+    background-image: url("../../shared/assets/images/map.svg");
+  }
+  &__mapCities {
+    z-index: 1;
+    position: absolute;
+    &_visible {
+      visibility: visible;
+    }
+  }
+  &__mapAllcities {
+    top: 123.58px;
+    left: 3px;
+    visibility: hidden;
+    &_visible {
+      visibility: visible;
+    }
+  }
+  &__mapMoscow {
+    top: 223.9px;
+    left: 118px;
+    visibility: hidden;
+    &_visible {
+      visibility: visible;
+    }
+  }
+  &__mapCenter {
+    visibility: hidden;
+    &_visible {
+      visibility: visible;
+    }
+    &-YV {
+      top: 196.9px;
+      left: 69.5px;
+    }
+    &-Belgorod {
+      top: 276.58px;
+      left: 65px;
+    }
+  }
+  &__mapSeverozapad {
+    top: 123.58px;
+    left: 3px;
+    visibility: hidden;
+    &_visible {
+      visibility: visible;
+    }
+  }
+  &__mapUg {
+    top: 319.18px;
+    left: 17.38px;
+    visibility: hidden;
+    &_visible {
+      visibility: visible;
+    }
+  }
+  &__mapVolga {
+    top: 260.04px;
+    left: 160.17px;
+    visibility: hidden;
+    &_visible {
+      visibility: visible;
+    }
+  }
+  &__mapUral {
+    top: 260.04px;
+    left: 160.17px;
+    visibility: hidden;
+    &_visible {
+      visibility: visible;
+    }
+  }
+  &__mapSyberia {
+    top: 437.74px;
+    left: 441.5px;
+    visibility: hidden;
+    &_visible {
+      visibility: visible;
+    }
+  }
+  &__mapDv {
+    top: 474.74px;
+    left: 928.13px;
+    visibility: hidden;
+    &_visible {
+      visibility: visible;
+    }
+
+  }
+}

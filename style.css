@@ -10,6 +10,7 @@
 @import url(./src/blocks/buisness/buisness.scss);
 @import url(./src/blocks/motivation/motivation.scss);
 @import url(./src/blocks/photolife/photolife.scss);
+@import url(./src/blocks/officies/officies.scss);
 
 body {
   margin: 0, auto;
@@ -27,7 +28,7 @@ ul {
 }
 
 .title {
-  font-size: 56px;
+  /* font-size: 56px; */
   font-style: normal;
   font-weight: 600;
   line-height: 100%; /* 56px */

@@ -1,4 +1,8 @@
 .app {
   margin: 0 auto 70px;
   max-width: 1250px;
+  
+  @media screen and (max-width: 320px) {
+    padding: 0 15px;
+  }
 }
