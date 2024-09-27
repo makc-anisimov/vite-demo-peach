@@ -1,6 +1,6 @@
 .mission {
   padding: 139px 72px 140px 68px;
-  margin: 100px auto;
+  margin: 0 auto 100px;
   background-color: #a30c33;
   width: calc(100% - 140px);
   // min-height: 471px;
@@ -34,6 +34,7 @@
 @media screen and (max-width: 768px) {
   .mission {
     padding: 0;
+    gap: 10px;
 
     &__title {
       font-size: 28px;

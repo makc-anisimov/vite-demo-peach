@@ -78,41 +78,25 @@
   </section>
   <section class="officies">
     <nav class="officies__navigation">
-      <div class="officies__officiesMenu">
-        <button class="officies__officiesButton">
-          <span class="officies__officiesButtonText">
+      <div class="officies__header">
+        <button class="officies__headerButton">
+          <span class="officies__headerButtonText">
             Офисы Softline
           </span>
-          <img src={DownAroow} alt="раскрыть меню" />
+          <img class="officies__officiesButtonSymb" src='./src/shared/assets/icons/btn-dwn.svg' alt="раскрыть меню" />
         </button>
-        <!-- <ul class="officies__menuAll">
-          {links.map((link, index) => (
-            <li class="officies__menuItem} key={index}>
-              <ul class="officies__menuCities}>
-                {link.map((city, index) => (
-                  <li class="officies__menuCitiesItem} key={index}>
-                    {city}
-                  </li>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul> -->
+        <ul class="officies__menuSmAll">
+          <li id="Allcities" class="officies__menuSmAllItem">Все</li>
+          <li id="Moscow" class="officies__menuSmAllItem">Москва</li>
+          <li id="Center" class="officies__menuSmAllItem">Центр</li>
+          <li id="Severozapad" class="officies__menuSmAllItem">Северо-Запад</li>
+          <li id="Ug" class="officies__menuSmAllItem">Юг</li>
+          <li id="Volga" class="officies__menuSmAllItem">Волга</li>
+          <li id="Ural" class="officies__menuSmAllItem">Урал</li>
+          <li id="Syberia" class="officies__menuSmAllItem">Сибирь</li>
+          <li id="Dvw" class="officies__menuSmAllItem">Дальний восток</li>
+        </ul>
       </div>
-      <ul class="officies__menu">
-        <li class="officies__menuItem">
-          <button type="button" class="officies__button">
-            Все
-          </button>
-        </li>
-        <!-- {links.map((link, index) => (
-          <li class="officies__menuItem} key={index}>
-            <button type="button" class="officies__button}>
-              {link[0]}
-            </button>
-          </li>
-        ))} -->
-      </ul>
     </nav>
     <div class="officies__mapBackground">
       <img class="officies__mapCities officies__mapAllcities" src="./src/shared/assets/images/allCities.svg" alt="Все города на карте" /> 
@@ -122,9 +106,9 @@
       <img class="officies__mapCities officies__mapSeverozapad" src="./src/shared/assets/images/CitiesSeverozapad.svg" alt="Города региона СевероЗапад на карте" /> 
       <img class="officies__mapCities officies__mapUg" src="./src/shared/assets/images/CitiesUG.svg" alt="Города региона Юг на карте" />
       <img class="officies__mapCities officies__mapVolga" src="./src/shared/assets/images/CitiesVolga.svg" alt="Города региона Волга на карте" />
-      <img class="officies__mapCities officies__mapAllcities" src="./src/shared/assets/images/CitiesUral.svg" alt="Города региона Урал на карте" />
+      <img class="officies__mapCities officies__mapUral" src="./src/shared/assets/images/CitiesUral.svg" alt="Города региона Урал на карте" />
       <img class="officies__mapCities officies__mapSyberia" src="./src/shared/assets/images/CitiesSyberia.svg" alt="Города региона Сибирь на карте" />
-      <img class="officies__mapCities officies__mapDv" src="./src/shared/assets/images/CitiesDV.svg" alt="Город Хабаровск на карте" />
+      <img class="officies__mapCities officies__mapDv" src="./src/shared/assets/images/CitiesDV.svg" alt="Город региона Дальний Восток на карте" />
     </div>
   </section>
 

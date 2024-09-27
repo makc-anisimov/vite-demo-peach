@@ -1,7 +1,95 @@
 .officies {
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  margin-top: -10px;
+
+  &__navigation {
+    position: relative;
+    height: 80px;
+    padding: 0 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.06);
+  }
+  &__header {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+    &Button {
+      cursor: pointer;
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    cursor: pointer;
+    &Text {
+      color: #444;
+      font-family: "Proxima Nova";
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 100%; /* 24px */
+    }
+  }
+    &__officiesButtonSymb {
+    }
+  }
+  &__menuSmAll {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    // flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+    &Item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      height: 100%;
+      cursor: pointer;
+      color: #444444;
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 20px;
+      text-align: left;
+      &_active {
+        color: #A30C33;
+        // ::after {
+        //   content: '';
+        
+        // }
+        &::after {
+          content: '';
+          position: absolute;
+          height: 3px;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          background: #A30C33;
+          // opacity: 0.5;
+        }
+
+      }
+    }
+  }
+
   &__mapBackground {
     z-index: -1;
-    margin: 0 auto;
+    margin: 90px auto 100px;
     position: relative;
     width: 1190px;
     height: 604px;
@@ -11,6 +99,8 @@
   &__mapCities {
     z-index: 1;
     position: absolute;
+    visibility: hidden;
+
     &_visible {
       visibility: visible;
     }
@@ -18,24 +108,24 @@
   &__mapAllcities {
     top: 123.58px;
     left: 3px;
-    visibility: hidden;
-    &_visible {
-      visibility: visible;
-    }
+    // visibility: hidden;
+    // &_visible {
+    //   visibility: visible;
+    // }
   }
   &__mapMoscow {
     top: 223.9px;
     left: 118px;
-    visibility: hidden;
-    &_visible {
-      visibility: visible;
-    }
+    // visibility: hidden;
+    // &_visible {
+    //   visibility: visible;
+    // }
   }
   &__mapCenter {
-    visibility: hidden;
-    &_visible {
-      visibility: visible;
-    }
+    // visibility: hidden;
+    // &_visible {
+    //   visibility: visible;
+    // }
     &-YV {
       top: 196.9px;
       left: 69.5px;
@@ -48,50 +138,49 @@
   &__mapSeverozapad {
     top: 123.58px;
     left: 3px;
-    visibility: hidden;
-    &_visible {
-      visibility: visible;
-    }
+    // visibility: hidden;
+    // &_visible {
+    //   visibility: visible;
+    // }
   }
   &__mapUg {
     top: 319.18px;
     left: 17.38px;
-    visibility: hidden;
-    &_visible {
-      visibility: visible;
-    }
+    // visibility: hidden;
+    // &_visible {
+    //   visibility: visible;
+    // }
   }
   &__mapVolga {
     top: 260.04px;
     left: 160.17px;
-    visibility: hidden;
-    &_visible {
-      visibility: visible;
-    }
+    // visibility: hidden;
+    // &_visible {
+    //   visibility: visible;
+    // }
   }
   &__mapUral {
     top: 260.04px;
     left: 160.17px;
-    visibility: hidden;
-    &_visible {
-      visibility: visible;
-    }
+    // visibility: hidden;
+    // &_visible {
+    //   visibility: visible;
+    // }
   }
   &__mapSyberia {
     top: 437.74px;
     left: 441.5px;
-    visibility: hidden;
-    &_visible {
-      visibility: visible;
-    }
+    // visibility: hidden;
+    // &_visible {
+    //   visibility: visible;
+    // }
   }
   &__mapDv {
     top: 474.74px;
     left: 928.13px;
-    visibility: hidden;
-    &_visible {
-      visibility: visible;
-    }
-
+    // visibility: hidden;
+    // &_visible {
+    //   visibility: visible;
+    // }
   }
 }

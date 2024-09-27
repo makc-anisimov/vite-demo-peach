@@ -1,9 +1,10 @@
 .photolife {
   position: relative;
-  width: 100%;
-  margin: 0 70px 70px;
+  width: calc( 100% - 140px);
+  margin: 0 auto;
+  padding: 0 70px;
   &__head {
-    width: calc(100% - 140px);
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -41,11 +42,12 @@
   &__slider {
     position: relative;
     width: 100%;
+    height: 100%;
     height: 834px;
   }
 
   &__slide {
-    width: 100%;
+    width: calc(100% - 140px);
     position: absolute;
     top: 0;
     left: 0;
@@ -59,14 +61,14 @@
 
   &__slide img {
     // width: 100%;
-    height: 100%;
+    // height: 100%;
     object-fit: cover;
   }
 
   &__progress {
     margin-top: 28px;
     position: absolute;
-    width: calc(100% - 140px);
+    width: 100%;
     bottom: -33px;
     display: flex;
     justify-content: center;
@@ -85,7 +87,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 768px) {
   .photolife {
     width: calc(100% - 10px);
     padding: 0 5px 49px;
